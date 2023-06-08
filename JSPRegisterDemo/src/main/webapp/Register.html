@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="skyblue">
+<marquee onmouseover="stop()" onmouseout="start()">
+<h1> Hi welcome to Registration page </h1>
+</marquee>
+		<center>		
+			<form action="StoreRecord.jsp">
+				ID :<input type="text" name="uid"><br><br>
+				Name :<input type="text" name="uname"><br><br>
+				Age :<input type="text" name="uage"><br><br>
+				Salary:<input type="text" name="usalary"><br><br>
+				Desig:<input type="text" name="udesig"><br><br>
+				PAN :<input type="text" name="upan"><br><br>
+
+				<input type="submit" value="REGISTER">
+				<input type="reset" value="RESET"> 
+				
+			
+			</form>
+		</center>
+
+<!-- drop table emp ;
+create table emp
+(
+	id int primary key,
+	Name varchar(10) not null,
+	age int check(age>18),
+	salary int check(salary > 25000),
+	desig varchar(10) default 'GET',
+	PAN varchar(10) unique 
+);
+ -->
+</body>
+</html>
